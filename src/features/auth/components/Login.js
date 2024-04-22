@@ -14,12 +14,11 @@ function Login(){
             <form
                 onSubmit={handleSubmit(async (data) => {
                     try{
-                        const response = await axios.post('http://localhost:8000/api/v1/users/login', data, {
+                        const response = await axios.post('/api/v1/users/login', data, {
                             headers: {
                                 'Content-Type': 'application/json'
                             }
                         })
-                        // console.log(response.data)
                         if(response.data.status === 'success'){
                             localStorage.setItem('authToken', `Bearer ${response.data.data}`);
                             navigate('/')
