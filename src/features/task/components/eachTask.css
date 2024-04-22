@@ -1,0 +1,12 @@
+.each-task {
+    color: #333;
+    background: #F2EFE5;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.15);
+}
+
+.each-card-icons-wrapper{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    cursor: pointer;
+}
